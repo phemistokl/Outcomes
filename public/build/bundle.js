@@ -225,7 +225,7 @@
 	    if (draining) {
 	        return;
 	    }
-	    var timeout = cachedSetTimeout(cleanUpNextTick);
+	    var timeout = cachedSetTimeout.call(null, cleanUpNextTick);
 	    draining = true;
 
 	    var len = queue.length;
@@ -242,7 +242,7 @@
 	    }
 	    currentQueue = null;
 	    draining = false;
-	    cachedClearTimeout(timeout);
+	    cachedClearTimeout.call(null, timeout);
 	}
 
 	process.nextTick = function (fun) {
@@ -254,7 +254,7 @@
 	    }
 	    queue.push(new Item(fun, args));
 	    if (queue.length === 1 && !draining) {
-	        cachedSetTimeout(drainQueue, 0);
+	        cachedSetTimeout.call(null, drainQueue, 0);
 	    }
 	};
 
@@ -19728,64 +19728,17 @@
 	var NotesApp = _react2['default'].createClass({
 	    displayName: 'NotesApp',
 
-	    getInitialState: function getInitialState() {
-	        return {
-	            notes: []
-	        };
-	    },
-
-	    componentDidMount: function componentDidMount() {
-	        var localNotes = JSON.parse(localStorage.getItem('notes'));
-	        if (localNotes) {
-	            this.setState({ notes: localNotes });
-	        }
-	    },
-
-	    componentDidUpdate: function componentDidUpdate() {
-	        this._updateLocalStorage();
-	    },
-
-	    handleNoteDelete: function handleNoteDelete(note) {
-	        var noteId = note.id;
-	        var newNotes = this.state.notes.filter(function (note) {
-	            return note.id !== noteId;
-	        });
-	        this.setState({ notes: newNotes });
-	    },
-
-	    handleNoteAdd: function handleNoteAdd(newNote) {
-	        var newNotes = this.state.notes.slice();
-	        newNotes.unshift(newNote);
-	        this.setState({ notes: newNotes });
-	    },
-
-	    handleNoteSearch: function handleNoteSearch(event) {
-	        var searchQuery = event.target.value.toLowerCase();
-	        var displayedNotes = this.state.notes.filter(function (note) {
-	            var searchValue = note.text.toLowerCase();
-	            return searchValue.indexOf(searchQuery) !== -1;
-	        });
-	        this.setState({ notes: displayedNotes });
-	    },
-
 	    render: function render() {
 	        return _react2['default'].createElement(
 	            'div',
-	            { className: 'notes-app' },
+	            { className: 'outcomes-app' },
 	            _react2['default'].createElement(
 	                'h2',
 	                { className: 'app-header' },
-	                'NotesApp'
+	                'Outcomes'
 	            ),
-	            _react2['default'].createElement(_NoteSearchJsx2['default'], { onSearch: this.handleNoteSearch }),
-	            _react2['default'].createElement(_NoteEditorJsx2['default'], { onNoteAdd: this.handleNoteAdd }),
-	            _react2['default'].createElement(_NotesGridJsx2['default'], { notes: this.state.notes, onNoteDelete: this.handleNoteDelete })
+	            _react2['default'].createElement('div', { className: 'header' })
 	        );
-	    },
-
-	    _updateLocalStorage: function _updateLocalStorage() {
-	        var notes = JSON.stringify(this.state.notes);
-	        localStorage.setItem('notes', notes);
 	    }
 	});
 
