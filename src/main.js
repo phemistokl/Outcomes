@@ -1,11 +1,9 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
+import React from 'react';
 
-import App from './components/App.jsx';
-import Header from './components/Header.jsx';
-import OutcomesGrid from './components/OutcomesGrid.jsx';
+import NotesApp from './components/App.jsx';
 
 ReactDOM.render(
-	<App />,
-	document.getElementById('mount-point')
+    <NotesApp />,
+    document.getElementById('mount-point')
 );

@@ -56,11 +56,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _componentsNotesAppJsx = __webpack_require__(159);
+	var _componentsAppJsx = __webpack_require__(159);
 
-	var _componentsNotesAppJsx2 = _interopRequireDefault(_componentsNotesAppJsx);
+	var _componentsAppJsx2 = _interopRequireDefault(_componentsAppJsx);
 
-	_reactDom2['default'].render(_react2['default'].createElement(_componentsNotesAppJsx2['default'], null), document.getElementById('mount-point'));
+	_reactDom2['default'].render(_react2['default'].createElement(_componentsAppJsx2['default'], null), document.getElementById('mount-point'));
 
 /***/ },
 /* 1 */
@@ -19702,6 +19702,111 @@
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(147);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _IncomeGridJsx = __webpack_require__(181);
+
+	var _IncomeGridJsx2 = _interopRequireDefault(_IncomeGridJsx);
+
+	var _OutcomeGridJsx = __webpack_require__(182);
+
+	var _OutcomeGridJsx2 = _interopRequireDefault(_OutcomeGridJsx);
+
+	var App = _react2['default'].createClass({
+	  displayName: 'App',
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      { className: 'app' },
+	      _react2['default'].createElement(
+	        'div',
+	        { className: 'container' },
+	        _react2['default'].createElement(
+	          'div',
+	          { className: 'row' },
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'col-lg-12 col-md-12' },
+	            _react2['default'].createElement(
+	              'h2',
+	              { className: 'app-header' },
+	              'Outcomes'
+	            )
+	          )
+	        ),
+	        _react2['default'].createElement(
+	          'div',
+	          { className: 'row' },
+	          _react2['default'].createElement('div', { className: 'col-lg-3 col-md-3' }),
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'col-lg-3 col-md-3' },
+	            '1 квартал'
+	          ),
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'col-lg-3 col-md-3' },
+	            '2 квартал'
+	          ),
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'col-lg-3 col-md-3' },
+	            '3 квартал'
+	          )
+	        ),
+	        _react2['default'].createElement(
+	          'div',
+	          { className: 'income-box' },
+	          _react2['default'].createElement(_IncomeGridJsx2['default'], null)
+	        ),
+	        _react2['default'].createElement(
+	          'div',
+	          { className: 'outcome-box' },
+	          _react2['default'].createElement(_OutcomeGridJsx2['default'], null)
+	        )
+	      )
+	    );
+	  }
+	});
+
+	exports['default'] = App;
+	module.exports = exports['default'];
+
+/***/ },
+/* 160 */,
+/* 161 */,
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */,
+/* 166 */,
+/* 167 */,
+/* 168 */,
+/* 169 */,
+/* 170 */,
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */,
+/* 180 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
 	    value: true
 	});
 
@@ -19711,42 +19816,27 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _NoteSearchJsx = __webpack_require__(160);
+	var _RowEditorJsx = __webpack_require__(183);
 
-	var _NoteSearchJsx2 = _interopRequireDefault(_NoteSearchJsx);
+	var _RowEditorJsx2 = _interopRequireDefault(_RowEditorJsx);
 
-	var _NoteEditorJsx = __webpack_require__(165);
-
-	var _NoteEditorJsx2 = _interopRequireDefault(_NoteEditorJsx);
-
-	var _NotesGridJsx = __webpack_require__(172);
-
-	var _NotesGridJsx2 = _interopRequireDefault(_NotesGridJsx);
-
-	__webpack_require__(178);
-
-	var NotesApp = _react2['default'].createClass({
-	    displayName: 'NotesApp',
+	var Row = _react2['default'].createClass({
+	    displayName: 'Row',
 
 	    render: function render() {
 	        return _react2['default'].createElement(
-	            'div',
-	            { className: 'outcomes-app' },
-	            _react2['default'].createElement(
-	                'h2',
-	                { className: 'app-header' },
-	                'Outcomes'
-	            ),
-	            _react2['default'].createElement('div', { className: 'header' })
+	            'h1',
+	            null,
+	            ' RowEditor '
 	        );
 	    }
 	});
 
-	exports['default'] = NotesApp;
+	exports['default'] = Row;
 	module.exports = exports['default'];
 
 /***/ },
-/* 160 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19761,373 +19851,62 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(161);
+	var _RowJsx = __webpack_require__(180);
 
-	var NoteSearch = _react2['default'].createClass({
-	  displayName: 'NoteSearch',
+	var _RowJsx2 = _interopRequireDefault(_RowJsx);
+
+	var IncomeGrid = _react2['default'].createClass({
+	  displayName: 'IncomeGrid',
 
 	  render: function render() {
 	    return _react2['default'].createElement(
 	      'div',
-	      { className: 'searchBox' },
-	      _react2['default'].createElement('input', { type: 'text', className: 'search-field', onChange: this.props.onSearch })
+	      null,
+	      _react2['default'].createElement(_RowJsx2['default'], null)
 	    );
 	  }
 	});
 
-	exports['default'] = NoteSearch;
+	exports['default'] = IncomeGrid;
 	module.exports = exports['default'];
 
 /***/ },
-/* 161 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
+	'use strict';
 
-	// load the styles
-	var content = __webpack_require__(162);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(164)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./NoteSearch.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./NoteSearch.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
 
-/***/ },
-/* 162 */
-/***/ function(module, exports, __webpack_require__) {
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	exports = module.exports = __webpack_require__(163)();
-	// imports
+	var _react = __webpack_require__(147);
 
+	var _react2 = _interopRequireDefault(_react);
 
-	// module
-	exports.push([module.id, "", ""]);
+	var _RowJsx = __webpack_require__(180);
 
-	// exports
+	var _RowJsx2 = _interopRequireDefault(_RowJsx);
 
+	var OutcomeGrid = _react2['default'].createClass({
+	  displayName: 'OutcomeGrid',
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      null,
+	      _react2['default'].createElement(_RowJsx2['default'], null)
+	    );;
+	  }
+	});
+
+	exports['default'] = OutcomeGrid;
+	module.exports = exports['default'];
 
 /***/ },
-/* 163 */
-/***/ function(module, exports) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	// css base code, injected by the css-loader
-	module.exports = function() {
-		var list = [];
-
-		// return the list of modules as css string
-		list.toString = function toString() {
-			var result = [];
-			for(var i = 0; i < this.length; i++) {
-				var item = this[i];
-				if(item[2]) {
-					result.push("@media " + item[2] + "{" + item[1] + "}");
-				} else {
-					result.push(item[1]);
-				}
-			}
-			return result.join("");
-		};
-
-		// import a list of modules into the list
-		list.i = function(modules, mediaQuery) {
-			if(typeof modules === "string")
-				modules = [[null, modules, ""]];
-			var alreadyImportedModules = {};
-			for(var i = 0; i < this.length; i++) {
-				var id = this[i][0];
-				if(typeof id === "number")
-					alreadyImportedModules[id] = true;
-			}
-			for(i = 0; i < modules.length; i++) {
-				var item = modules[i];
-				// skip already imported module
-				// this implementation is not 100% perfect for weird media query combinations
-				//  when a module is imported multiple times with different media queries.
-				//  I hope this will never occur (Hey this way we have smaller bundles)
-				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-					if(mediaQuery && !item[2]) {
-						item[2] = mediaQuery;
-					} else if(mediaQuery) {
-						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-					}
-					list.push(item);
-				}
-			}
-		};
-		return list;
-	};
-
-
-/***/ },
-/* 164 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	var stylesInDom = {},
-		memoize = function(fn) {
-			var memo;
-			return function () {
-				if (typeof memo === "undefined") memo = fn.apply(this, arguments);
-				return memo;
-			};
-		},
-		isOldIE = memoize(function() {
-			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
-		}),
-		getHeadElement = memoize(function () {
-			return document.head || document.getElementsByTagName("head")[0];
-		}),
-		singletonElement = null,
-		singletonCounter = 0,
-		styleElementsInsertedAtTop = [];
-
-	module.exports = function(list, options) {
-		if(false) {
-			if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
-		}
-
-		options = options || {};
-		// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-		// tags it will allow on a page
-		if (typeof options.singleton === "undefined") options.singleton = isOldIE();
-
-		// By default, add <style> tags to the bottom of <head>.
-		if (typeof options.insertAt === "undefined") options.insertAt = "bottom";
-
-		var styles = listToStyles(list);
-		addStylesToDom(styles, options);
-
-		return function update(newList) {
-			var mayRemove = [];
-			for(var i = 0; i < styles.length; i++) {
-				var item = styles[i];
-				var domStyle = stylesInDom[item.id];
-				domStyle.refs--;
-				mayRemove.push(domStyle);
-			}
-			if(newList) {
-				var newStyles = listToStyles(newList);
-				addStylesToDom(newStyles, options);
-			}
-			for(var i = 0; i < mayRemove.length; i++) {
-				var domStyle = mayRemove[i];
-				if(domStyle.refs === 0) {
-					for(var j = 0; j < domStyle.parts.length; j++)
-						domStyle.parts[j]();
-					delete stylesInDom[domStyle.id];
-				}
-			}
-		};
-	}
-
-	function addStylesToDom(styles, options) {
-		for(var i = 0; i < styles.length; i++) {
-			var item = styles[i];
-			var domStyle = stylesInDom[item.id];
-			if(domStyle) {
-				domStyle.refs++;
-				for(var j = 0; j < domStyle.parts.length; j++) {
-					domStyle.parts[j](item.parts[j]);
-				}
-				for(; j < item.parts.length; j++) {
-					domStyle.parts.push(addStyle(item.parts[j], options));
-				}
-			} else {
-				var parts = [];
-				for(var j = 0; j < item.parts.length; j++) {
-					parts.push(addStyle(item.parts[j], options));
-				}
-				stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
-			}
-		}
-	}
-
-	function listToStyles(list) {
-		var styles = [];
-		var newStyles = {};
-		for(var i = 0; i < list.length; i++) {
-			var item = list[i];
-			var id = item[0];
-			var css = item[1];
-			var media = item[2];
-			var sourceMap = item[3];
-			var part = {css: css, media: media, sourceMap: sourceMap};
-			if(!newStyles[id])
-				styles.push(newStyles[id] = {id: id, parts: [part]});
-			else
-				newStyles[id].parts.push(part);
-		}
-		return styles;
-	}
-
-	function insertStyleElement(options, styleElement) {
-		var head = getHeadElement();
-		var lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - 1];
-		if (options.insertAt === "top") {
-			if(!lastStyleElementInsertedAtTop) {
-				head.insertBefore(styleElement, head.firstChild);
-			} else if(lastStyleElementInsertedAtTop.nextSibling) {
-				head.insertBefore(styleElement, lastStyleElementInsertedAtTop.nextSibling);
-			} else {
-				head.appendChild(styleElement);
-			}
-			styleElementsInsertedAtTop.push(styleElement);
-		} else if (options.insertAt === "bottom") {
-			head.appendChild(styleElement);
-		} else {
-			throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
-		}
-	}
-
-	function removeStyleElement(styleElement) {
-		styleElement.parentNode.removeChild(styleElement);
-		var idx = styleElementsInsertedAtTop.indexOf(styleElement);
-		if(idx >= 0) {
-			styleElementsInsertedAtTop.splice(idx, 1);
-		}
-	}
-
-	function createStyleElement(options) {
-		var styleElement = document.createElement("style");
-		styleElement.type = "text/css";
-		insertStyleElement(options, styleElement);
-		return styleElement;
-	}
-
-	function createLinkElement(options) {
-		var linkElement = document.createElement("link");
-		linkElement.rel = "stylesheet";
-		insertStyleElement(options, linkElement);
-		return linkElement;
-	}
-
-	function addStyle(obj, options) {
-		var styleElement, update, remove;
-
-		if (options.singleton) {
-			var styleIndex = singletonCounter++;
-			styleElement = singletonElement || (singletonElement = createStyleElement(options));
-			update = applyToSingletonTag.bind(null, styleElement, styleIndex, false);
-			remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true);
-		} else if(obj.sourceMap &&
-			typeof URL === "function" &&
-			typeof URL.createObjectURL === "function" &&
-			typeof URL.revokeObjectURL === "function" &&
-			typeof Blob === "function" &&
-			typeof btoa === "function") {
-			styleElement = createLinkElement(options);
-			update = updateLink.bind(null, styleElement);
-			remove = function() {
-				removeStyleElement(styleElement);
-				if(styleElement.href)
-					URL.revokeObjectURL(styleElement.href);
-			};
-		} else {
-			styleElement = createStyleElement(options);
-			update = applyToTag.bind(null, styleElement);
-			remove = function() {
-				removeStyleElement(styleElement);
-			};
-		}
-
-		update(obj);
-
-		return function updateStyle(newObj) {
-			if(newObj) {
-				if(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)
-					return;
-				update(obj = newObj);
-			} else {
-				remove();
-			}
-		};
-	}
-
-	var replaceText = (function () {
-		var textStore = [];
-
-		return function (index, replacement) {
-			textStore[index] = replacement;
-			return textStore.filter(Boolean).join('\n');
-		};
-	})();
-
-	function applyToSingletonTag(styleElement, index, remove, obj) {
-		var css = remove ? "" : obj.css;
-
-		if (styleElement.styleSheet) {
-			styleElement.styleSheet.cssText = replaceText(index, css);
-		} else {
-			var cssNode = document.createTextNode(css);
-			var childNodes = styleElement.childNodes;
-			if (childNodes[index]) styleElement.removeChild(childNodes[index]);
-			if (childNodes.length) {
-				styleElement.insertBefore(cssNode, childNodes[index]);
-			} else {
-				styleElement.appendChild(cssNode);
-			}
-		}
-	}
-
-	function applyToTag(styleElement, obj) {
-		var css = obj.css;
-		var media = obj.media;
-
-		if(media) {
-			styleElement.setAttribute("media", media)
-		}
-
-		if(styleElement.styleSheet) {
-			styleElement.styleSheet.cssText = css;
-		} else {
-			while(styleElement.firstChild) {
-				styleElement.removeChild(styleElement.firstChild);
-			}
-			styleElement.appendChild(document.createTextNode(css));
-		}
-	}
-
-	function updateLink(linkElement, obj) {
-		var css = obj.css;
-		var sourceMap = obj.sourceMap;
-
-		if(sourceMap) {
-			// http://stackoverflow.com/a/26603875
-			css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
-		}
-
-		var blob = new Blob([css], { type: "text/css" });
-
-		var oldSrc = linkElement.href;
-
-		linkElement.href = URL.createObjectURL(blob);
-
-		if(oldSrc)
-			URL.revokeObjectURL(oldSrc);
-	}
-
-
-/***/ },
-/* 165 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20142,416 +19921,20 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _NoteColorJsx = __webpack_require__(166);
-
-	var _NoteColorJsx2 = _interopRequireDefault(_NoteColorJsx);
-
-	__webpack_require__(170);
-
-	var NoteEditor = _react2['default'].createClass({
-	    displayName: 'NoteEditor',
-
-	    getInitialState: function getInitialState() {
-	        return {
-	            text: ''
-	        };
-	    },
-
-	    handleColorChange: function handleColorChange(event) {
-	        this.setState({ color: event.target.style.backgroundColor });
-	    },
-
-	    handleTextChange: function handleTextChange(event) {
-	        this.setState({ text: event.target.value });
-	    },
-
-	    handleNoteAddus: function handleNoteAddus() {
-	        var newNote = {
-	            text: this.state.text,
-	            color: this.state.color,
-	            id: Date.now()
-	        };
-
-	        this.props.onNoteAdd(newNote);
-	        this.setState({ text: '' });
-	    },
+	var RowEditor = _react2['default'].createClass({
+	    displayName: 'RowEditor',
 
 	    render: function render() {
 	        return _react2['default'].createElement(
-	            'div',
-	            { className: 'note-editor' },
-	            _react2['default'].createElement('textarea', {
-	                placeholder: 'Enter your note here...',
-	                rows: 5,
-	                className: 'textarea',
-	                value: this.state.text,
-	                onChange: this.handleTextChange
-	            }),
-	            _react2['default'].createElement(_NoteColorJsx2['default'], { onColorAdd: this.handleColorChange }),
-	            _react2['default'].createElement(
-	                'button',
-	                { className: 'add-button', onClick: this.handleNoteAddus },
-	                'Add'
-	            )
+	            'h1',
+	            null,
+	            ' RowEditor '
 	        );
 	    }
 	});
 
-	exports['default'] = NoteEditor;
+	exports['default'] = RowEditor;
 	module.exports = exports['default'];
-
-/***/ },
-/* 166 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(147);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	__webpack_require__(167);
-
-	var NoteColor = _react2['default'].createClass({
-	    displayName: 'NoteColor',
-
-	    render: function render() {
-	        var colorRed = { backgroundColor: "#ff8a80" };
-	        var colorYellow = { backgroundColor: "#ffff8d" };
-	        var colorGray = { backgroundColor: "#cfd8dc" };
-	        var colorBlue = { backgroundColor: "#80d8ff" };
-	        var colorGreen = { backgroundColor: "#ccff90" };
-	        return _react2['default'].createElement(
-	            'div',
-	            { className: 'colorize-block', onClick: this.props.onColorAdd },
-	            _react2['default'].createElement('div', { role: 'button', className: 'btn-red colorize', style: colorRed }),
-	            _react2['default'].createElement('div', { role: 'button', className: 'btn-yellow colorize', style: colorYellow }),
-	            _react2['default'].createElement('div', { role: 'button', className: 'btn-gray colorize', style: colorGray }),
-	            _react2['default'].createElement('div', { role: 'button', className: 'btn-blue colorize', style: colorBlue }),
-	            _react2['default'].createElement('div', { role: 'button', className: 'btn-green colorize', style: colorGreen })
-	        );
-	    }
-	});
-
-	exports['default'] = NoteColor;
-	module.exports = exports['default'];
-
-/***/ },
-/* 167 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(168);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(164)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./NoteColor.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./NoteColor.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 168 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(163)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".colorize {\r\n    box-sizing: border-box;\r\n    border-radius: 50%;\r\n    height: 26px;\r\n    width: 26px;\r\n    margin: 2px;\r\n    cursor: pointer;\r\n    display: inline-block;\r\n}\r\n.colorize-block {\r\n    display: inline-block;\r\n    width: 200px;\r\n    -ms-flex-item-align: start;\r\n        align-self: flex-start;\r\n    position: absolute;\r\n}\r\n.select {\r\n    background-image: url(" + __webpack_require__(169) + ");\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n    background-size: 16px 16px;\r\n}\r\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 169 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxOHB4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiMwMDAwMDAiIG9wYWNpdHk9IjAuNTQiIHZpZXdCb3g9IjAgMCAxOCAxOCIgaGVpZ2h0PSIxOHB4Ij4NCiAgPHBhdGggZD0ibTAgMGgxOHYxOGgtMTh6IiBmaWxsPSJub25lIi8+DQogIDxwYXRoIGQ9Im02LjYxIDExLjg5bC0zLjExLTMuMTEtMS4wNiAxLjA2IDQuMTcgNC4xNiA4Ljk1LTguOTUtMS4wNi0xLjA1eiIvPg0KPC9zdmc+DQo="
-
-/***/ },
-/* 170 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(171);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(164)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./NoteEditor.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./NoteEditor.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 171 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(163)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".note-editor {\r\n    width: 100%;\r\n    max-width: 600px;\r\n    padding: 16px;\r\n    margin: 16px auto;\r\n    background-color: white;\r\n    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);\r\n    border-radius: 2px;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n}\r\n\r\n.textarea {\r\n    width: 100%;\r\n    resize: none;\r\n    margin: 5px;\r\n    font-size: 14px;\r\n    border: none;\r\n    font-weight: 300;\r\n}\r\n\r\n.textarea:focus {\r\n    outline: 0;\r\n}\r\n\r\n.add-button {\r\n    -ms-flex-item-align: end;\r\n        align-self: flex-end;\r\n    width: 100px;\r\n    background-color:#44c767;\r\n    border-radius:28px;\r\n    border:1px solid #18ab29;\r\n    cursor:pointer;\r\n    color:#ffffff;\r\n    font-size:14px;\r\n    padding:8px 8px;\r\n    text-transform: uppercase;\r\n    text-decoration:none;\r\n    text-shadow:0px 1px 0px #2f6627;\r\n}\r\n\r\n.add-button:hover {\r\n    background-color:#5cbf2a;\r\n}\r\n\r\n.add-button:active {\r\n    position:relative;\r\n    top:1px;\r\n}\r\n\r\n.add-button:focus {\r\n    outline: 0;\r\n}", ""]);
-
-	// exports
-
-
-/***/ },
-/* 172 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(147);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _NoteJsx = __webpack_require__(173);
-
-	var _NoteJsx2 = _interopRequireDefault(_NoteJsx);
-
-	__webpack_require__(176);
-
-	var NotesGrid = _react2['default'].createClass({
-	    displayName: 'NotesGrid',
-
-	    componentDidMount: function componentDidMount() {
-	        var grid = this.refs.grid;
-	        this.msnry = new Masonry(grid, {
-	            itemSelector: '.note',
-	            columnWidth: 200,
-	            gutter: 10,
-	            isFitWidth: true
-	        });
-	    },
-
-	    componentDidUpdate: function componentDidUpdate(prevProps) {
-	        if (this.props.notes.length !== prevProps.notes.length) {
-	            this.msnry.reloadItems();
-	            this.msnry.layout();
-	        }
-	    },
-
-	    render: function render() {
-	        var onNoteDelete = this.props.onNoteDelete;
-
-	        return _react2['default'].createElement(
-	            'div',
-	            { className: 'notes-grid', ref: 'grid' },
-	            this.props.notes.map(function (note) {
-	                return _react2['default'].createElement(
-	                    _NoteJsx2['default'],
-	                    {
-	                        key: note.id,
-	                        onDelete: onNoteDelete.bind(null, note),
-	                        color: note.color },
-	                    note.text
-	                );
-	            })
-	        );
-	    }
-	});
-
-	exports['default'] = NotesGrid;
-	module.exports = exports['default'];
-
-/***/ },
-/* 173 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(147);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	__webpack_require__(174);
-
-	var Note = _react2['default'].createClass({
-	    displayName: 'Note',
-
-	    render: function render() {
-	        var style = { backgroundColor: this.props.color };
-	        return _react2['default'].createElement(
-	            'div',
-	            { className: 'note', style: style },
-	            _react2['default'].createElement(
-	                'span',
-	                { className: 'delete-note', onClick: this.props.onDelete },
-	                ' x '
-	            ),
-	            this.props.children,
-	            ' '
-	        );
-	    }
-	});
-
-	exports['default'] = Note;
-	module.exports = exports['default'];
-
-/***/ },
-/* 174 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(175);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(164)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./Note.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./Note.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 175 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(163)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".note {\r\n    width: 200px;\r\n    height: auto;\r\n    float: left;\r\n    background-color: yellow;\r\n    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);\r\n    border-radius: 2px;\r\n    padding: 10px;\r\n    margin-bottom: 10px;\r\n    -webkit-transition: box-shadow .3s;\r\n    transition: box-shadow .3s;\r\n    white-space: pre-wrap;\r\n    white-space: -moz-pre-wrap;\r\n    white-space: -pre-wrap;\r\n    white-space: -o-pre-wrap;\r\n    word-wrap: break-word;\r\n}\r\n\r\n.note:hover {\r\n    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);\r\n}\r\n\r\n.delete-note {\r\n    position: absolute;\r\n    top:5px;\r\n    right:5px;\r\n    display: none;\r\n    color: rgba(0,0,0,0.6);\r\n    cursor: pointer;\r\n}\r\n\r\n.note:hover .delete-note {\r\n    display: block;\r\n}", ""]);
-
-	// exports
-
-
-/***/ },
-/* 176 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(177);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(164)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./NotesGrid.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./NotesGrid.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 177 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(163)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".notes-grid {\r\n    margin: 0 auto;\r\n}", ""]);
-
-	// exports
-
-
-/***/ },
-/* 178 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(179);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(164)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./NotesApp.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./NotesApp.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 179 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(163)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "* {\r\n    box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n    font-family: sans-serif;\r\n    font-weight: 300;\r\n    background-color: #eaeaea;\r\n}\r\n\r\n#mount-point {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n            align-items: center;\r\n}\r\n\r\n.notes-app {\r\n    max-width: 960px;\r\n    width: 100%;\r\n}\r\n\r\n.app-header {\r\n    text-align: center;\r\n    font-weight: 500;\r\n    color: grey;\r\n    text-shadow: 0px 2px 3px rgba(255,255,255,0.5);\r\n}", ""]);
-
-	// exports
-
 
 /***/ }
 /******/ ]);
