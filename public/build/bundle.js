@@ -19711,11 +19711,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _IncomeGridJsx = __webpack_require__(181);
+	var _IncomeGridJsx = __webpack_require__(160);
 
 	var _IncomeGridJsx2 = _interopRequireDefault(_IncomeGridJsx);
 
-	var _OutcomeGridJsx = __webpack_require__(182);
+	var _OutcomeGridJsx = __webpack_require__(163);
 
 	var _OutcomeGridJsx2 = _interopRequireDefault(_OutcomeGridJsx);
 
@@ -19781,62 +19781,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 160 */,
-/* 161 */,
-/* 162 */,
-/* 163 */,
-/* 164 */,
-/* 165 */,
-/* 166 */,
-/* 167 */,
-/* 168 */,
-/* 169 */,
-/* 170 */,
-/* 171 */,
-/* 172 */,
-/* 173 */,
-/* 174 */,
-/* 175 */,
-/* 176 */,
-/* 177 */,
-/* 178 */,
-/* 179 */,
-/* 180 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(147);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _RowEditorJsx = __webpack_require__(183);
-
-	var _RowEditorJsx2 = _interopRequireDefault(_RowEditorJsx);
-
-	var Row = _react2['default'].createClass({
-	    displayName: 'Row',
-
-	    render: function render() {
-	        return _react2['default'].createElement(
-	            'h1',
-	            null,
-	            ' RowEditor '
-	        );
-	    }
-	});
-
-	exports['default'] = Row;
-	module.exports = exports['default'];
-
-/***/ },
-/* 181 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19851,7 +19796,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _RowJsx = __webpack_require__(180);
+	var _RowJsx = __webpack_require__(161);
 
 	var _RowJsx2 = _interopRequireDefault(_RowJsx);
 
@@ -19871,13 +19816,13 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 182 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', {
-	  value: true
+	    value: true
 	});
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -19886,27 +19831,27 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _RowJsx = __webpack_require__(180);
+	var _RowEditorJsx = __webpack_require__(162);
 
-	var _RowJsx2 = _interopRequireDefault(_RowJsx);
+	var _RowEditorJsx2 = _interopRequireDefault(_RowEditorJsx);
 
-	var OutcomeGrid = _react2['default'].createClass({
-	  displayName: 'OutcomeGrid',
+	var Row = _react2['default'].createClass({
+	    displayName: 'Row',
 
-	  render: function render() {
-	    return _react2['default'].createElement(
-	      'div',
-	      null,
-	      _react2['default'].createElement(_RowJsx2['default'], null)
-	    );;
-	  }
+	    render: function render() {
+	        return _react2['default'].createElement(
+	            'h1',
+	            null,
+	            ' RowEditor '
+	        );
+	    }
 	});
 
-	exports['default'] = OutcomeGrid;
+	exports['default'] = Row;
 	module.exports = exports['default'];
 
 /***/ },
-/* 183 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19934,6 +19879,41 @@
 	});
 
 	exports['default'] = RowEditor;
+	module.exports = exports['default'];
+
+/***/ },
+/* 163 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(147);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _RowJsx = __webpack_require__(161);
+
+	var _RowJsx2 = _interopRequireDefault(_RowJsx);
+
+	var OutcomeGrid = _react2['default'].createClass({
+	  displayName: 'OutcomeGrid',
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      null,
+	      _react2['default'].createElement(_RowJsx2['default'], null)
+	    );;
+	  }
+	});
+
+	exports['default'] = OutcomeGrid;
 	module.exports = exports['default'];
 
 /***/ }
